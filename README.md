@@ -16,3 +16,8 @@ A small source for a simple password generator.
 4. Press Create Button to create
 5. Copy the Password
 ```
+
+## Images
+Small Preview
+
+![Preview](https://cdn.upload.systems/uploads/ybGsfEVI.png)
