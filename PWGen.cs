@@ -14,7 +14,7 @@ namespace PasswortGenerator
             characters.AddRange(Enumerable.Range('a', 26).Select(i => (char)i));
             characters.AddRange(Enumerable.Range('A', 26).Select(i => (char)i));
             characters.AddRange(Enumerable.Range('0', 10).Select(i => (char)i));
-            characters.AddRange(Enumerable.Range('!', 16).Select(i => (char)i));
+            characters.AddRange(Enumerable.Range('!', 10).Select(i => (char)i));
 
             if (counter <= 0)
             {
