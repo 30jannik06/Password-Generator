@@ -24,13 +24,19 @@
             else
             {
                 int length = int.Parse(lenghtCount.Text);
-                PWGen.GeneratePW(counter: length);
+                bool isValid;
+                string generatedPassword = PWGen.GeneratePW(counter: length, out isValid);
+
+                if (isValid)
+                {
+                    update(generatedPassword);
+                }
             }
         }
 
         private void copyPasswordButton_Click(object sender, EventArgs e)
         {
-            if (passwordOutput.Text == null)
+            if (passwordOutput.Text == "")
             {
                 return;
             }
